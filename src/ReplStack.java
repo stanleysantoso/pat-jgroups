@@ -26,6 +26,10 @@ public class ReplStack<T> extends ReceiverAdapter{
         return state.peek();
     }
 
+    public Stack<T> getStack() {
+        return state;
+    }
+
     public void viewAccepted(View new_view) {
         System.out.println("** view: " + new_view);
     }

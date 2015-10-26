@@ -26,6 +26,10 @@ public class ReplSet<T> extends ReceiverAdapter{
         return state.remove(obj);
     }
 
+    public HashSet<T> getSet(){
+        return state;
+    }
+
     public void viewAccepted(View new_view) {
         System.out.println("** view: " + new_view);
     }
